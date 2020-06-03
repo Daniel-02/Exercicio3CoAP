@@ -12,8 +12,6 @@ from sense_emu import SenseHat
 
 # Autor: Daniel Arena Toledo
 
-#Funcao a ser executada quando o observe detecta alteracao no recurso
-
 client = None
 
 sense = SenseHat() #instancia emulado so SenseHat
@@ -23,6 +21,7 @@ black = (0, 0, 0) #RGB para cor preta (apagado)
 limiar_temp = 0 #armazena o limiar de temperatura recebido
 limiar_pres = 0 #armazena o limiar de pressao recebido
 
+#Funcao a ser executada quando o observe detecta alteracao no recurso
 def callback(response):
     global client
     global limiar_temp
