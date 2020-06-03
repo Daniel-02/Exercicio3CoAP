@@ -1,5 +1,4 @@
 # Exercicio 3
-![Projeto](figura_1.png)
 
 * O **Cliente** envia seus valores de temperatura e pressão e depois fica observando por alterações no recurso do servidor até que ele deseje se desinscrever, removendo seus valores do recurso.
 
@@ -7,12 +6,13 @@
 
 * A **Camada de Aplicação** recupera os valores dos limiares do servidor e de acordo com as medições de temperatura e pressão acende os LEDs
 
+![Projeto](Exercicio3.png)
 ----------------------------------
 
 ## Requisitos:
 *	PIP
 *	Python 2.7
-*	CoAPthon 4.0.2
+*	[CoAPthon](https://github.com/Tanganelli/CoAPthon)
 *	SenseHat Emulator
 
 
@@ -23,18 +23,18 @@
 	```sudo pip install CoAPthon```
 
 
-2) Fazer download dos arquivos do Github para a pasta desejada.
+2) Clonar este repositório.
 Para isso abra o terminal na pasta desejada e execute o comando:
 
 	```git clone https://github.com/daniel-02/Exercicio3CoAP```
 
-3) Apos download entrar no diretorio Exercicio3CoAP:
+3) Apos download entrar no diretório Exercicio3CoAP:
 
 4) Iniciar o servidor no IP da maquina e na porta desejada, por exemplo, iniciando o servidor no IP 127.0.0.1 e porta 5683:
 
 	```python servidor.py 127.0.0.1:5683```
 
-5) Abrir outro terminal, entrar no diretorio Exercicio3CoAP e iniciar a Camada de Aplicação informando o IP e a porta na qual o servidor foi iniciado:
+5) Abrir outro terminal, entrar no diretório Exercicio3CoAP e iniciar a Camada de Aplicação informando o IP e a porta na qual o servidor foi iniciado:
 
 	```python aplicacao.py 127.0.0.1:5683```
 
