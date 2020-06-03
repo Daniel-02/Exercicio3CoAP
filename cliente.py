@@ -87,11 +87,7 @@ def main():
 
     host, port = address.split(':') #trata o endereco passado separando o host e a porta
     port = int(port)
-#    try:
-#        tmp = socket.gethostbyname(host)
-#        host = tmp
-#    except socket.gaierror:
-#        pass
+
     client = HelperClient(server=(host, port)) #inicializa o client
 
     enviados = payload.split()
